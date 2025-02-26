@@ -1,0 +1,363 @@
+/*html*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Body*/
+
+body {
+    font-family: 'Arial', sans-serif; 
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*Navbar*/
+.navbar-brand img {
+    width: 230px;
+    max-width: 100%; 
+    height: auto;
+}
+
+.nav {    
+    top: 0;
+    z-index: 100;
+    background-color: black;     
+}
+
+.navbar {
+    background-color: rgb(22, 15, 123); 
+    color: white;
+    box-shadow: 5px 5px 5px rgb(22, 15, 123);
+    padding: 10px 20px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #85cbd7; 
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: white; 
+    padding: 8px;
+    border-radius: 5px; 
+}
+
+.navbar-toggler:focus {
+    box-shadow: none; 
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+/* Initial section with nutritional information paragraph*/
+.info-section {
+    background: url('../images/salmonfresco.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    background-color: rgb(22, 15, 123);
+    
+    width: 100%;
+    height: 500px; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+
+.info-content {
+    position: relative;
+    max-width: 80%;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+}
+
+/* Presentation Section */
+.section-presentation {
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa; 
+    padding: 50px 0;
+}
+
+.container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image-presentation {
+    width: 100%;
+    max-width: 485px; 
+    margin: 20px 0;
+}
+
+
+.container-text {
+    padding: 20px;
+}
+
+.titulo-presentacion {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.presentation-text {
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Section with parallax effect*/
+.section-parallax {
+    background: url(../images/bg_pescadores.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+.section-parallax .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 15, 123, 0.75);
+}
+
+.section-parallax-content {
+    position: relative;
+    z-index: 1;
+    color: white; 
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.products {
+    width: 100%;
+    min-height: 800px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.title-section {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(22, 15, 123);
+}
+
+.card-product {
+    color: rgb(22, 15, 123);
+    box-shadow: 5px 5px 5px rgba(22, 22, 22, 0.5);
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    height: 500px;
+}
+
+.title-card {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.img-product {
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+.product-list {
+    text-align: left;
+    font-size: medium;
+    list-style-type: none;
+    padding: 0;
+}
+
+.ver-mas {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgb(22, 15, 123);
+    text-decoration: none;
+}
+
+.ver-mas:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-section {
+    position: relative;
+    width: 100%;
+    min-height: 800px;
+    background: url(../images/salmonplate.jpg) no-repeat center;
+    background-size: cover;
+    background-color: rgb(22, 15, 123);
+    padding: 50px 0;
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 1;
+}
+
+.contact-section > * {
+    position: relative;
+    z-index: 2; 
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(22, 15, 123);
+}
+
+.contact-form {
+    background: rgb(22, 15, 123);
+    color: silver;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 2px 8px rgba(248, 242, 248, 0.3);
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+    color: whitesmoke;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.button-send {
+    background-color: whitesmoke;
+    color: rgb(22, 15, 123);
+    font-size: larger;
+    font-weight: bold;
+    border: 2px solid rgb(22, 15, 123);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-send:hover {
+    background-color:#85cbd7;
+    color: whitesmoke;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    font-size: 50px;
+    color:rgb(22, 15, 123);
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #85cbd7;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    padding: 15px;
+}
+
+/*Fotter*/
+.footer {
+    width: 100%;
+    background-color: rgb(22, 15, 123);
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
